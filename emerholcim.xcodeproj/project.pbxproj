@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52F6FB1B2267EFB400C4D53A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6FB1A2267EFB400C4D53A /* AppDelegate.swift */; };
+		52F6FB1D2267EFB400C4D53A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6FB1C2267EFB400C4D53A /* ViewController.swift */; };
+		52F6FB202267EFB400C4D53A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F6FB1E2267EFB400C4D53A /* Main.storyboard */; };
+		52F6FB222267EFB600C4D53A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F6FB212267EFB600C4D53A /* Assets.xcassets */; };
+		52F6FB252267EFB600C4D53A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F6FB232267EFB600C4D53A /* LaunchScreen.storyboard */; };
+		52F6FB302267EFB600C4D53A /* emerholcimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6FB2F2267EFB600C4D53A /* emerholcimTests.swift */; };
+		52F6FB3B2267EFB600C4D53A /* emerholcimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6FB3A2267EFB600C4D53A /* emerholcimUITests.swift */; };
+		54B213D3E6E1A23CFA7B6795 /* Pods_emerholcimUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B1DC05D2F03119F2798869 /* Pods_emerholcimUITests.framework */; };
+		70424E8C2B4A426DE42ED764 /* Pods_emerholcim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83121F65A2C4BA8F5C46D3FB /* Pods_emerholcim.framework */; };
+		8A042B5222A0BFD90017C487 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A042B5122A0BFD90017C487 /* MenuController.swift */; };
+		8A0D45BB22B5611900A7A475 /* TrasladoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D45BA22B5611900A7A475 /* TrasladoController.swift */; };
+		8A0D45BD22B566A800A7A475 /* CoordenadasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D45BC22B566A800A7A475 /* CoordenadasCell.swift */; };
+		8A107F0822B08FEE009B92F3 /* InternoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A107F0722B08FEE009B92F3 /* InternoController.swift */; };
+		8A5A259722AC4DE000AAC2CC /* PacienteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A259622AC4DE000AAC2CC /* PacienteController.swift */; };
+		8A7A530A22A49B4100749821 /* Levelunocontrollers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A530922A49B4100749821 /* Levelunocontrollers.swift */; };
+		8A7A530E22A4B43200749821 /* LeveldosControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A530D22A4B43200749821 /* LeveldosControllers.swift */; };
+		8A819DF322BB0B0E002949BA /* boton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A819DF222BB0B0E002949BA /* boton.swift */; };
+		8A8947F722A583CA009AB895 /* Regutaladaunocontrollers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8947F622A583CA009AB895 /* Regutaladaunocontrollers.swift */; };
+		8A8947FD22A58D2A009AB895 /* ReguladadosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8947FC22A58D2A009AB895 /* ReguladadosController.swift */; };
+		8A89480322A59866009AB895 /* QuimicaunoControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A89480222A59866009AB895 /* QuimicaunoControllers.swift */; };
+		8A89480522A59BEA009AB895 /* QuimicadosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A89480422A59BEA009AB895 /* QuimicadosController.swift */; };
+		8A8F744D22A37BED00444DF0 /* LevelControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F744C22A37BED00444DF0 /* LevelControllers.swift */; };
+		8A8F744F22A37F8500444DF0 /* RegularControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F744E22A37F8500444DF0 /* RegularControllers.swift */; };
+		8A8F745122A37FAE00444DF0 /* GraveControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F745022A37FAE00444DF0 /* GraveControllers.swift */; };
+		8A8F745322A37FC400444DF0 /* ToxicologicasControlles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F745222A37FC400444DF0 /* ToxicologicasControlles.swift */; };
+		8A8F745722A380A800444DF0 /* QuimicaControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F745622A380A800444DF0 /* QuimicaControllers.swift */; };
+		8AAA717E22B9ADBF0085E179 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAA717D22B9ADBF0085E179 /* MapKit.framework */; };
+		8AD8F82A22AA0ECD00601097 /* RegistroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD8F82922AA0ECD00601097 /* RegistroController.swift */; };
+		8AEDF25B22A5BFF200978CE0 /* ToxicaunoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEDF25A22A5BFF200978CE0 /* ToxicaunoController.swift */; };
+		8AEDF25D22A5C2F900978CE0 /* ToxicadosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEDF25C22A5C2F900978CE0 /* ToxicadosController.swift */; };
+		8AEDF25F22A5C63300978CE0 /* GraveunoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEDF25E22A5C63300978CE0 /* GraveunoController.swift */; };
+		8AEDF26122A5C91E00978CE0 /* GravedosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEDF26022A5C91E00978CE0 /* GravedosController.swift */; };
+		8AF94EE422B32E5800BC16C0 /* ExternoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF94EE322B32E5800BC16C0 /* ExternoController.swift */; };
+		8AF94EE622B330E500BC16C0 /* BrigadistasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF94EE522B330E500BC16C0 /* BrigadistasController.swift */; };
+		8AF94EE822B331BD00BC16C0 /* EmergenciasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF94EE722B331BD00BC16C0 /* EmergenciasController.swift */; };
+		8AFCCF0822B5C55D0079E825 /* mapa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFCCF0722B5C55D0079E825 /* mapa.swift */; };
+		8AFF91E322B1F874006F82E6 /* PokemonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF91E222B1F874006F82E6 /* PokemonCell.swift */; };
+		CB3AE1A1E50186D085F95317 /* Pods_emerholcimTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5EB736073D4CEC47273FCD /* Pods_emerholcimTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52F6FB2C2267EFB600C4D53A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52F6FB0F2267EFB400C4D53A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52F6FB162267EFB400C4D53A;
+			remoteInfo = emerholcim;
+		};
+		52F6FB372267EFB600C4D53A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52F6FB0F2267EFB400C4D53A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52F6FB162267EFB400C4D53A;
+			remoteInfo = emerholcim;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19DE1FE3391E96C18090F698 /* Pods-emerholcimTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emerholcimTests.debug.xcconfig"; path = "Target Support Files/Pods-emerholcimTests/Pods-emerholcimTests.debug.xcconfig"; sourceTree = "<group>"; };
+		30B1DC05D2F03119F2798869 /* Pods_emerholcimUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emerholcimUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50839A468BB576874DF6191C /* Pods-emerholcimUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emerholcimUITests.debug.xcconfig"; path = "Target Support Files/Pods-emerholcimUITests/Pods-emerholcimUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		52F6FB172267EFB400C4D53A /* emerholcim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emerholcim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F6FB1A2267EFB400C4D53A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52F6FB1C2267EFB400C4D53A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52F6FB1F2267EFB400C4D53A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52F6FB212267EFB600C4D53A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52F6FB242267EFB600C4D53A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52F6FB262267EFB600C4D53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F6FB2B2267EFB600C4D53A /* emerholcimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = emerholcimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F6FB2F2267EFB600C4D53A /* emerholcimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emerholcimTests.swift; sourceTree = "<group>"; };
+		52F6FB312267EFB600C4D53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F6FB362267EFB600C4D53A /* emerholcimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = emerholcimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F6FB3A2267EFB600C4D53A /* emerholcimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emerholcimUITests.swift; sourceTree = "<group>"; };
+		52F6FB3C2267EFB600C4D53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D5EB736073D4CEC47273FCD /* Pods_emerholcimTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emerholcimTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83121F65A2C4BA8F5C46D3FB /* Pods_emerholcim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emerholcim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A042B5122A0BFD90017C487 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		8A0D45BA22B5611900A7A475 /* TrasladoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrasladoController.swift; sourceTree = "<group>"; };
+		8A0D45BC22B566A800A7A475 /* CoordenadasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordenadasCell.swift; sourceTree = "<group>"; };
+		8A107F0722B08FEE009B92F3 /* InternoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternoController.swift; sourceTree = "<group>"; };
+		8A5A259622AC4DE000AAC2CC /* PacienteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacienteController.swift; sourceTree = "<group>"; };
+		8A7A530922A49B4100749821 /* Levelunocontrollers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Levelunocontrollers.swift; sourceTree = "<group>"; };
+		8A7A530D22A4B43200749821 /* LeveldosControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeveldosControllers.swift; sourceTree = "<group>"; };
+		8A819DF222BB0B0E002949BA /* boton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boton.swift; sourceTree = "<group>"; };
+		8A8947F622A583CA009AB895 /* Regutaladaunocontrollers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regutaladaunocontrollers.swift; sourceTree = "<group>"; };
+		8A8947FC22A58D2A009AB895 /* ReguladadosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReguladadosController.swift; sourceTree = "<group>"; };
+		8A89480222A59866009AB895 /* QuimicaunoControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuimicaunoControllers.swift; sourceTree = "<group>"; };
+		8A89480422A59BEA009AB895 /* QuimicadosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuimicadosController.swift; sourceTree = "<group>"; };
+		8A8F744C22A37BED00444DF0 /* LevelControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelControllers.swift; sourceTree = "<group>"; };
+		8A8F744E22A37F8500444DF0 /* RegularControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularControllers.swift; sourceTree = "<group>"; };
+		8A8F745022A37FAE00444DF0 /* GraveControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraveControllers.swift; sourceTree = "<group>"; };
+		8A8F745222A37FC400444DF0 /* ToxicologicasControlles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToxicologicasControlles.swift; sourceTree = "<group>"; };
+		8A8F745622A380A800444DF0 /* QuimicaControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuimicaControllers.swift; sourceTree = "<group>"; };
+		8AAA717D22B9ADBF0085E179 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8AD8F82922AA0ECD00601097 /* RegistroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroController.swift; sourceTree = "<group>"; };
+		8AEDF25A22A5BFF200978CE0 /* ToxicaunoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToxicaunoController.swift; sourceTree = "<group>"; };
+		8AEDF25C22A5C2F900978CE0 /* ToxicadosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToxicadosController.swift; sourceTree = "<group>"; };
+		8AEDF25E22A5C63300978CE0 /* GraveunoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraveunoController.swift; sourceTree = "<group>"; };
+		8AEDF26022A5C91E00978CE0 /* GravedosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GravedosController.swift; sourceTree = "<group>"; };
+		8AF94EE322B32E5800BC16C0 /* ExternoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternoController.swift; sourceTree = "<group>"; };
+		8AF94EE522B330E500BC16C0 /* BrigadistasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrigadistasController.swift; sourceTree = "<group>"; };
+		8AF94EE722B331BD00BC16C0 /* EmergenciasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergenciasController.swift; sourceTree = "<group>"; };
+		8AFCCF0722B5C55D0079E825 /* mapa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapa.swift; sourceTree = "<group>"; };
+		8AFF91E222B1F874006F82E6 /* PokemonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCell.swift; sourceTree = "<group>"; };
+		8BE496D4471094948AB4D71D /* Pods-emerholcim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emerholcim.debug.xcconfig"; path = "Target Support Files/Pods-emerholcim/Pods-emerholcim.debug.xcconfig"; sourceTree = "<group>"; };
+		95E8A6C471B1E8361E3F3457 /* Pods-emerholcim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emerholcim.release.xcconfig"; path = "Target Support Files/Pods-emerholcim/Pods-emerholcim.release.xcconfig"; sourceTree = "<group>"; };
+		A4BDB0ECE7DCA5040C5B6460 /* Pods-emerholcimUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emerholcimUITests.release.xcconfig"; path = "Target Support Files/Pods-emerholcimUITests/Pods-emerholcimUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FB8DE6DE45432DD636A25C20 /* Pods-emerholcimTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emerholcimTests.release.xcconfig"; path = "Target Support Files/Pods-emerholcimTests/Pods-emerholcimTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52F6FB142267EFB400C4D53A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AAA717E22B9ADBF0085E179 /* MapKit.framework in Frameworks */,
+				70424E8C2B4A426DE42ED764 /* Pods_emerholcim.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F6FB282267EFB600C4D53A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3AE1A1E50186D085F95317 /* Pods_emerholcimTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F6FB332267EFB600C4D53A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54B213D3E6E1A23CFA7B6795 /* Pods_emerholcimUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		031AAD234AFB1CE9CBD58497 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BE496D4471094948AB4D71D /* Pods-emerholcim.debug.xcconfig */,
+				95E8A6C471B1E8361E3F3457 /* Pods-emerholcim.release.xcconfig */,
+				19DE1FE3391E96C18090F698 /* Pods-emerholcimTests.debug.xcconfig */,
+				FB8DE6DE45432DD636A25C20 /* Pods-emerholcimTests.release.xcconfig */,
+				50839A468BB576874DF6191C /* Pods-emerholcimUITests.debug.xcconfig */,
+				A4BDB0ECE7DCA5040C5B6460 /* Pods-emerholcimUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		52F6FB0E2267EFB400C4D53A = {
+			isa = PBXGroup;
+			children = (
+				52F6FB192267EFB400C4D53A /* emerholcim */,
+				52F6FB2E2267EFB600C4D53A /* emerholcimTests */,
+				52F6FB392267EFB600C4D53A /* emerholcimUITests */,
+				52F6FB182267EFB400C4D53A /* Products */,
+				031AAD234AFB1CE9CBD58497 /* Pods */,
+				D357D04C1E98CB3C5CCC47D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52F6FB182267EFB400C4D53A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52F6FB172267EFB400C4D53A /* emerholcim.app */,
+				52F6FB2B2267EFB600C4D53A /* emerholcimTests.xctest */,
+				52F6FB362267EFB600C4D53A /* emerholcimUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52F6FB192267EFB400C4D53A /* emerholcim */ = {
+			isa = PBXGroup;
+			children = (
+				52F6FB1A2267EFB400C4D53A /* AppDelegate.swift */,
+				52F6FB1C2267EFB400C4D53A /* ViewController.swift */,
+				52F6FB1E2267EFB400C4D53A /* Main.storyboard */,
+				52F6FB212267EFB600C4D53A /* Assets.xcassets */,
+				52F6FB232267EFB600C4D53A /* LaunchScreen.storyboard */,
+				52F6FB262267EFB600C4D53A /* Info.plist */,
+				8A042B5122A0BFD90017C487 /* MenuController.swift */,
+				8A8F744C22A37BED00444DF0 /* LevelControllers.swift */,
+				8A8F744E22A37F8500444DF0 /* RegularControllers.swift */,
+				8A8F745022A37FAE00444DF0 /* GraveControllers.swift */,
+				8A8F745222A37FC400444DF0 /* ToxicologicasControlles.swift */,
+				8A8F745622A380A800444DF0 /* QuimicaControllers.swift */,
+				8A7A530922A49B4100749821 /* Levelunocontrollers.swift */,
+				8A8947F622A583CA009AB895 /* Regutaladaunocontrollers.swift */,
+				8A7A530D22A4B43200749821 /* LeveldosControllers.swift */,
+				8A8947FC22A58D2A009AB895 /* ReguladadosController.swift */,
+				8A89480222A59866009AB895 /* QuimicaunoControllers.swift */,
+				8A89480422A59BEA009AB895 /* QuimicadosController.swift */,
+				8AEDF25A22A5BFF200978CE0 /* ToxicaunoController.swift */,
+				8AEDF25C22A5C2F900978CE0 /* ToxicadosController.swift */,
+				8AEDF25E22A5C63300978CE0 /* GraveunoController.swift */,
+				8AEDF26022A5C91E00978CE0 /* GravedosController.swift */,
+				8AD8F82922AA0ECD00601097 /* RegistroController.swift */,
+				8A5A259622AC4DE000AAC2CC /* PacienteController.swift */,
+				8A107F0722B08FEE009B92F3 /* InternoController.swift */,
+				8AFF91E222B1F874006F82E6 /* PokemonCell.swift */,
+				8AF94EE322B32E5800BC16C0 /* ExternoController.swift */,
+				8AF94EE522B330E500BC16C0 /* BrigadistasController.swift */,
+				8AF94EE722B331BD00BC16C0 /* EmergenciasController.swift */,
+				8A0D45BA22B5611900A7A475 /* TrasladoController.swift */,
+				8A0D45BC22B566A800A7A475 /* CoordenadasCell.swift */,
+				8AFCCF0722B5C55D0079E825 /* mapa.swift */,
+				8A819DF222BB0B0E002949BA /* boton.swift */,
+			);
+			path = emerholcim;
+			sourceTree = "<group>";
+		};
+		52F6FB2E2267EFB600C4D53A /* emerholcimTests */ = {
+			isa = PBXGroup;
+			children = (
+				52F6FB2F2267EFB600C4D53A /* emerholcimTests.swift */,
+				52F6FB312267EFB600C4D53A /* Info.plist */,
+			);
+			path = emerholcimTests;
+			sourceTree = "<group>";
+		};
+		52F6FB392267EFB600C4D53A /* emerholcimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52F6FB3A2267EFB600C4D53A /* emerholcimUITests.swift */,
+				52F6FB3C2267EFB600C4D53A /* Info.plist */,
+			);
+			path = emerholcimUITests;
+			sourceTree = "<group>";
+		};
+		D357D04C1E98CB3C5CCC47D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AAA717D22B9ADBF0085E179 /* MapKit.framework */,
+				83121F65A2C4BA8F5C46D3FB /* Pods_emerholcim.framework */,
+				5D5EB736073D4CEC47273FCD /* Pods_emerholcimTests.framework */,
+				30B1DC05D2F03119F2798869 /* Pods_emerholcimUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52F6FB162267EFB400C4D53A /* emerholcim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52F6FB3F2267EFB600C4D53A /* Build configuration list for PBXNativeTarget "emerholcim" */;
+			buildPhases = (
+				D0BDFAD066F5F2FFE328833C /* [CP] Check Pods Manifest.lock */,
+				52F6FB132267EFB400C4D53A /* Sources */,
+				52F6FB142267EFB400C4D53A /* Frameworks */,
+				52F6FB152267EFB400C4D53A /* Resources */,
+				5C6A15D18BD7B72DA465F134 /* [CP] Embed Pods Frameworks */,
+				912BF475C4DE95BE1FB87D86 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = emerholcim;
+			productName = emerholcim;
+			productReference = 52F6FB172267EFB400C4D53A /* emerholcim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52F6FB2A2267EFB600C4D53A /* emerholcimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52F6FB422267EFB600C4D53A /* Build configuration list for PBXNativeTarget "emerholcimTests" */;
+			buildPhases = (
+				1BFE69F6ED482A66536AD6FD /* [CP] Check Pods Manifest.lock */,
+				52F6FB272267EFB600C4D53A /* Sources */,
+				52F6FB282267EFB600C4D53A /* Frameworks */,
+				52F6FB292267EFB600C4D53A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52F6FB2D2267EFB600C4D53A /* PBXTargetDependency */,
+			);
+			name = emerholcimTests;
+			productName = emerholcimTests;
+			productReference = 52F6FB2B2267EFB600C4D53A /* emerholcimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52F6FB352267EFB600C4D53A /* emerholcimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52F6FB452267EFB600C4D53A /* Build configuration list for PBXNativeTarget "emerholcimUITests" */;
+			buildPhases = (
+				90390BAA78D875A0E8662CFA /* [CP] Check Pods Manifest.lock */,
+				52F6FB322267EFB600C4D53A /* Sources */,
+				52F6FB332267EFB600C4D53A /* Frameworks */,
+				52F6FB342267EFB600C4D53A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52F6FB382267EFB600C4D53A /* PBXTargetDependency */,
+			);
+			name = emerholcimUITests;
+			productName = emerholcimUITests;
+			productReference = 52F6FB362267EFB600C4D53A /* emerholcimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52F6FB0F2267EFB400C4D53A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					52F6FB162267EFB400C4D53A = {
+						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					52F6FB2A2267EFB600C4D53A = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 52F6FB162267EFB400C4D53A;
+					};
+					52F6FB352267EFB600C4D53A = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 52F6FB162267EFB400C4D53A;
+					};
+				};
+			};
+			buildConfigurationList = 52F6FB122267EFB400C4D53A /* Build configuration list for PBXProject "emerholcim" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52F6FB0E2267EFB400C4D53A;
+			productRefGroup = 52F6FB182267EFB400C4D53A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52F6FB162267EFB400C4D53A /* emerholcim */,
+				52F6FB2A2267EFB600C4D53A /* emerholcimTests */,
+				52F6FB352267EFB600C4D53A /* emerholcimUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52F6FB152267EFB400C4D53A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F6FB252267EFB600C4D53A /* LaunchScreen.storyboard in Resources */,
+				52F6FB222267EFB600C4D53A /* Assets.xcassets in Resources */,
+				52F6FB202267EFB400C4D53A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F6FB292267EFB600C4D53A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F6FB342267EFB600C4D53A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BFE69F6ED482A66536AD6FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-emerholcimTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C6A15D18BD7B72DA465F134 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-emerholcim/Pods-emerholcim-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-emerholcim/Pods-emerholcim-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-emerholcim/Pods-emerholcim-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90390BAA78D875A0E8662CFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-emerholcimUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		912BF475C4DE95BE1FB87D86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-emerholcim/Pods-emerholcim-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-emerholcim/Pods-emerholcim-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-emerholcim/Pods-emerholcim-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0BDFAD066F5F2FFE328833C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-emerholcim-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52F6FB132267EFB400C4D53A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A8F744F22A37F8500444DF0 /* RegularControllers.swift in Sources */,
+				8AD8F82A22AA0ECD00601097 /* RegistroController.swift in Sources */,
+				8A8F744D22A37BED00444DF0 /* LevelControllers.swift in Sources */,
+				8A89480322A59866009AB895 /* QuimicaunoControllers.swift in Sources */,
+				8A042B5222A0BFD90017C487 /* MenuController.swift in Sources */,
+				8A819DF322BB0B0E002949BA /* boton.swift in Sources */,
+				8A8F745722A380A800444DF0 /* QuimicaControllers.swift in Sources */,
+				8A8F745122A37FAE00444DF0 /* GraveControllers.swift in Sources */,
+				8AEDF25D22A5C2F900978CE0 /* ToxicadosController.swift in Sources */,
+				8AF94EE422B32E5800BC16C0 /* ExternoController.swift in Sources */,
+				8A0D45BB22B5611900A7A475 /* TrasladoController.swift in Sources */,
+				8A107F0822B08FEE009B92F3 /* InternoController.swift in Sources */,
+				8A8947FD22A58D2A009AB895 /* ReguladadosController.swift in Sources */,
+				8AFCCF0822B5C55D0079E825 /* mapa.swift in Sources */,
+				8AEDF25F22A5C63300978CE0 /* GraveunoController.swift in Sources */,
+				8A8F745322A37FC400444DF0 /* ToxicologicasControlles.swift in Sources */,
+				8AF94EE822B331BD00BC16C0 /* EmergenciasController.swift in Sources */,
+				8A7A530A22A49B4100749821 /* Levelunocontrollers.swift in Sources */,
+				8AFF91E322B1F874006F82E6 /* PokemonCell.swift in Sources */,
+				8A0D45BD22B566A800A7A475 /* CoordenadasCell.swift in Sources */,
+				8AF94EE622B330E500BC16C0 /* BrigadistasController.swift in Sources */,
+				52F6FB1D2267EFB400C4D53A /* ViewController.swift in Sources */,
+				8AEDF26122A5C91E00978CE0 /* GravedosController.swift in Sources */,
+				8A89480522A59BEA009AB895 /* QuimicadosController.swift in Sources */,
+				52F6FB1B2267EFB400C4D53A /* AppDelegate.swift in Sources */,
+				8A5A259722AC4DE000AAC2CC /* PacienteController.swift in Sources */,
+				8AEDF25B22A5BFF200978CE0 /* ToxicaunoController.swift in Sources */,
+				8A8947F722A583CA009AB895 /* Regutaladaunocontrollers.swift in Sources */,
+				8A7A530E22A4B43200749821 /* LeveldosControllers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F6FB272267EFB600C4D53A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F6FB302267EFB600C4D53A /* emerholcimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F6FB322267EFB600C4D53A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F6FB3B2267EFB600C4D53A /* emerholcimUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52F6FB2D2267EFB600C4D53A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52F6FB162267EFB400C4D53A /* emerholcim */;
+			targetProxy = 52F6FB2C2267EFB600C4D53A /* PBXContainerItemProxy */;
+		};
+		52F6FB382267EFB600C4D53A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52F6FB162267EFB400C4D53A /* emerholcim */;
+			targetProxy = 52F6FB372267EFB600C4D53A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52F6FB1E2267EFB400C4D53A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52F6FB1F2267EFB400C4D53A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52F6FB232267EFB600C4D53A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52F6FB242267EFB600C4D53A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52F6FB3D2267EFB600C4D53A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52F6FB3E2267EFB600C4D53A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52F6FB402267EFB600C4D53A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BE496D4471094948AB4D71D /* Pods-emerholcim.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = emerholcim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nredondoios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		52F6FB412267EFB600C4D53A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95E8A6C471B1E8361E3F3457 /* Pods-emerholcim.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = emerholcim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nredondoios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		52F6FB432267EFB600C4D53A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19DE1FE3391E96C18090F698 /* Pods-emerholcimTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = emerholcimTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nredondo26.emerholcim.emerholcimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/emerholcim.app/emerholcim";
+			};
+			name = Debug;
+		};
+		52F6FB442267EFB600C4D53A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB8DE6DE45432DD636A25C20 /* Pods-emerholcimTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = emerholcimTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nredondo26.emerholcim.emerholcimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/emerholcim.app/emerholcim";
+			};
+			name = Release;
+		};
+		52F6FB462267EFB600C4D53A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50839A468BB576874DF6191C /* Pods-emerholcimUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = emerholcimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nredondo26.emerholcim.emerholcimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = emerholcim;
+			};
+			name = Debug;
+		};
+		52F6FB472267EFB600C4D53A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4BDB0ECE7DCA5040C5B6460 /* Pods-emerholcimUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = emerholcimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nredondo26.emerholcim.emerholcimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = emerholcim;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52F6FB122267EFB400C4D53A /* Build configuration list for PBXProject "emerholcim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F6FB3D2267EFB600C4D53A /* Debug */,
+				52F6FB3E2267EFB600C4D53A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52F6FB3F2267EFB600C4D53A /* Build configuration list for PBXNativeTarget "emerholcim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F6FB402267EFB600C4D53A /* Debug */,
+				52F6FB412267EFB600C4D53A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52F6FB422267EFB600C4D53A /* Build configuration list for PBXNativeTarget "emerholcimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F6FB432267EFB600C4D53A /* Debug */,
+				52F6FB442267EFB600C4D53A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52F6FB452267EFB600C4D53A /* Build configuration list for PBXNativeTarget "emerholcimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F6FB462267EFB600C4D53A /* Debug */,
+				52F6FB472267EFB600C4D53A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52F6FB0F2267EFB400C4D53A /* Project object */;
+}
