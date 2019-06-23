@@ -9,7 +9,8 @@ import UIKit
 import Alamofire
 
 
-class RegistroController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class RegistroController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate,UIPickerViewDataSource,UIPickerViewDelegate {
+    
     
     @IBOutlet weak var nombre: UITextField!
     @IBOutlet weak var apellidos: UITextField!
@@ -19,15 +20,45 @@ class RegistroController: UIViewController,UIImagePickerControllerDelegate, UINa
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var codempleado: UITextField!
     @IBOutlet weak var imagen: UIImageView!
+    @IBOutlet weak var piker: UIPickerView!
+    
+    let plantas = ["Bello","Buga","Cali Sur","Cemento","Chía" ,"Floridablanca","Nobsa","Palmira","Puente Aranda","Ricaurte","Teleport","Tunja","La Flor","Pipiral"]
     
     let imagePicker = UIImagePickerController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        piker.isHidden = true
         imagePicker.delegate = self
        
     }
+
     
+    @IBAction func oultar(_ sender: Any) {
+        piker.isHidden = true
+    }
+    
+    @IBAction func mostrarlista(_ sender: Any) {
+        piker.isHidden = false
+    }
+    
+
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return plantas[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return plantas.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        zona.text = plantas[row]
+    }
+
     @IBAction func cargarimagen(_ sender: Any) {
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
