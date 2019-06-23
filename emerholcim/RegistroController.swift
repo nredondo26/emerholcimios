@@ -34,13 +34,6 @@ class RegistroController: UIViewController,UIImagePickerControllerDelegate, UINa
         present(imagePicker, animated: true, completion: nil)
     }
     
-    func makeItCircle() {
-        self.imagen.layer.cornerRadius  = self.imagen.frame.height/2
-        self.imagen.layer.masksToBounds = false
-        self.imagen.clipsToBounds = true
-        self.imagen.contentMode = .scaleAspectFit
-    }
-    
     @IBAction func registrar(_ sender: Any) {
         
         let nombrer = nombre.text!
@@ -90,7 +83,6 @@ class RegistroController: UIViewController,UIImagePickerControllerDelegate, UINa
             imagen.image = pickedImage
         }
         dismiss(animated: true, completion: nil)
-        makeItCircle()
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
