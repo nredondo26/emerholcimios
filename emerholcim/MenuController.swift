@@ -15,6 +15,7 @@ class MenuController: UIViewController {
     @IBOutlet weak var txtzona: UILabel!
     @IBOutlet weak var imagenperfil: UIImageView!
     
+
     var nombre:String?
     var apellidos:String?
     var puesto:String?
@@ -33,7 +34,7 @@ class MenuController: UIViewController {
             llenar(correo: email!, clavee: passs!)
         }
     }
-    
+        
     func comprovarpreferencias() -> Bool {
         let emailp = UserDefaults.standard.value(forKey: "emailp")
         if(emailp != nil){
