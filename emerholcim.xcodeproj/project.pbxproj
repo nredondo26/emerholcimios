@@ -16,11 +16,13 @@
 		52F6FB3B2267EFB600C4D53A /* emerholcimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6FB3A2267EFB600C4D53A /* emerholcimUITests.swift */; };
 		54B213D3E6E1A23CFA7B6795 /* Pods_emerholcimUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B1DC05D2F03119F2798869 /* Pods_emerholcimUITests.framework */; };
 		70424E8C2B4A426DE42ED764 /* Pods_emerholcim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83121F65A2C4BA8F5C46D3FB /* Pods_emerholcim.framework */; };
+		8A01FD8422C4314F00ACBCAF /* 30601611.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8A01FD8322C4314F00ACBCAF /* 30601611.jpeg */; };
 		8A042B5222A0BFD90017C487 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A042B5122A0BFD90017C487 /* MenuController.swift */; };
 		8A0D45BB22B5611900A7A475 /* TrasladoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D45BA22B5611900A7A475 /* TrasladoController.swift */; };
 		8A0D45BD22B566A800A7A475 /* CoordenadasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D45BC22B566A800A7A475 /* CoordenadasCell.swift */; };
 		8A107F0822B08FEE009B92F3 /* InternoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A107F0722B08FEE009B92F3 /* InternoController.swift */; };
 		8A5A259722AC4DE000AAC2CC /* PacienteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A259622AC4DE000AAC2CC /* PacienteController.swift */; };
+		8A60D86322C5209D00C88F67 /* InicioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60D86222C5209D00C88F67 /* InicioController.swift */; };
 		8A7A530A22A49B4100749821 /* Levelunocontrollers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A530922A49B4100749821 /* Levelunocontrollers.swift */; };
 		8A7A530E22A4B43200749821 /* LeveldosControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A530D22A4B43200749821 /* LeveldosControllers.swift */; };
 		8A819DF322BB0B0E002949BA /* boton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A819DF222BB0B0E002949BA /* boton.swift */; };
@@ -83,11 +85,13 @@
 		52F6FB3C2267EFB600C4D53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D5EB736073D4CEC47273FCD /* Pods_emerholcimTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emerholcimTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83121F65A2C4BA8F5C46D3FB /* Pods_emerholcim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emerholcim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A01FD8322C4314F00ACBCAF /* 30601611.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 30601611.jpeg; sourceTree = "<group>"; };
 		8A042B5122A0BFD90017C487 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		8A0D45BA22B5611900A7A475 /* TrasladoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrasladoController.swift; sourceTree = "<group>"; };
 		8A0D45BC22B566A800A7A475 /* CoordenadasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordenadasCell.swift; sourceTree = "<group>"; };
 		8A107F0722B08FEE009B92F3 /* InternoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternoController.swift; sourceTree = "<group>"; };
 		8A5A259622AC4DE000AAC2CC /* PacienteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacienteController.swift; sourceTree = "<group>"; };
+		8A60D86222C5209D00C88F67 /* InicioController.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = InicioController.swift; sourceTree = "<group>"; };
 		8A7A530922A49B4100749821 /* Levelunocontrollers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Levelunocontrollers.swift; sourceTree = "<group>"; };
 		8A7A530D22A4B43200749821 /* LeveldosControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeveldosControllers.swift; sourceTree = "<group>"; };
 		8A819DF222BB0B0E002949BA /* boton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boton.swift; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 		52F6FB192267EFB400C4D53A /* emerholcim */ = {
 			isa = PBXGroup;
 			children = (
+				8A01FD8322C4314F00ACBCAF /* 30601611.jpeg */,
 				52F6FB1A2267EFB400C4D53A /* AppDelegate.swift */,
 				52F6FB1C2267EFB400C4D53A /* ViewController.swift */,
 				52F6FB1E2267EFB400C4D53A /* Main.storyboard */,
@@ -217,6 +222,7 @@
 				8A0D45BC22B566A800A7A475 /* CoordenadasCell.swift */,
 				8AFCCF0722B5C55D0079E825 /* mapa.swift */,
 				8A819DF222BB0B0E002949BA /* boton.swift */,
+				8A60D86222C5209D00C88F67 /* InicioController.swift */,
 			);
 			path = emerholcim;
 			sourceTree = "<group>";
@@ -366,6 +372,7 @@
 				52F6FB252267EFB600C4D53A /* LaunchScreen.storyboard in Resources */,
 				52F6FB222267EFB600C4D53A /* Assets.xcassets in Resources */,
 				52F6FB202267EFB400C4D53A /* Main.storyboard in Resources */,
+				8A01FD8422C4314F00ACBCAF /* 30601611.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +506,7 @@
 				8A89480322A59866009AB895 /* QuimicaunoControllers.swift in Sources */,
 				8A042B5222A0BFD90017C487 /* MenuController.swift in Sources */,
 				8A819DF322BB0B0E002949BA /* boton.swift in Sources */,
+				8A60D86322C5209D00C88F67 /* InicioController.swift in Sources */,
 				8A8F745722A380A800444DF0 /* QuimicaControllers.swift in Sources */,
 				8A8F745122A37FAE00444DF0 /* GraveControllers.swift in Sources */,
 				8AEDF25D22A5C2F900978CE0 /* ToxicadosController.swift in Sources */,

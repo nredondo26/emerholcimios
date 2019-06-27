@@ -139,6 +139,40 @@ class RegistroController: UIViewController,UIImagePickerControllerDelegate, UINa
         present(imagePicker, animated: true, completion: nil)
     }
     
+    func uploadImage(img: UIImage, nombre: String, apellidos: String, zona: String, cargos: String, email: String, password: String, codigoempleado: String){
+        let ImageData = img.jpegData(compressionQuality: 0.8)
+        let urlReq = "http://appholcim.com/registro.php"
+        
+         let parameters = ["nombre":nombre, "apellidos":apellidos, "zona":zona, "area":cargos,"email":email,"password":password,"codempleado":codigoempleado]
+        
+        Alamofire.upload(multipartFormData: { multipartFormData in
+            multipartFormData.append(ImageData!, withName: "imagen",fileName: "imagen.jpg", mimeType: "image/jpg")
+            for (key, value) in parameters {//this will loop the 'parameters' value, you can comment this if not needed
+                multipartFormData.append(value.data(using: String.Encoding.utf8)!, withName: key)
+            }
+        },
+                         to:urlReq)
+        { (result) in
+            switch result {
+            case .success(let upload, _, _):
+                
+                upload.uploadProgress(closure: { (progress) in
+                    print("Upload Progress: \(progress.fractionCompleted)")
+                })
+                
+                upload.responseJSON { response in
+                    print(response.result.value)
+                    if let dic = response.result.value as? NSDictionary{
+                        //do your action base on Api Return failed/success
+                    }
+                }
+                
+            case .failure(let encodingError):
+                print(encodingError)
+            }
+        }
+    }
+    
     @IBAction func registrar(_ sender: Any) {
         
         let nombrer = nombre.text!
@@ -155,34 +189,13 @@ class RegistroController: UIViewController,UIImagePickerControllerDelegate, UINa
         }
         
         let valorzona = zonainfo(zona: zonar)
-                
-        let parameters = ["nombre":nombrer, "apellidos":apellidosr, "zona":valorzona, "area":cargosr,"email":emailr,"password":passwordr,"codempleado":codr]
-        let imageToUploadURL = Bundle.main.url(forResource: "30601611", withExtension: "jpeg")
-        let url = "http://appholcim.com/registro.php"
         
-        Alamofire.upload(
-            multipartFormData: { multipartFormData in
-                multipartFormData.append(imageToUploadURL!, withName: "imagen")
-                for (key, val) in parameters {
-                    multipartFormData.append(val.data(using: String.Encoding.utf8)!, withName: key)
-                }
-        },
-            to: url,
-            encodingCompletion: { encodingResult in
-                switch encodingResult {
-                case .success(let upload, _, _):
-                    upload.responseJSON { response in
-                        if let jsonResponse = response.result.value as? [String: Any] {
-                            print(jsonResponse)
-                        }
-                    }
-                case .failure(let encodingError):
-                    print(encodingError)
-                }
-        }
-        )
+        print(imagen.image!)
+        
+        uploadImage(img: imagen.image!, nombre: nombrer, apellidos: apellidosr, zona: valorzona, cargos: cargosr, email: emailr, password: passwordr, codigoempleado: codr)
+        
     }
-      
+    
     
    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
     if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
