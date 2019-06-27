@@ -22,22 +22,27 @@ class LeveldosController: UIViewController {
         
         if(datorecibidodos == "Gripe o Catarro"){
             imagendos.image = UIImage(named: "c100p.jpg")
+            
         }
         
         if(datorecibidodos == "Vérgito, Desmayo-Síncope"){
             imagendos.image = UIImage(named: "c101p.jpg")
+            
         }
         
         if(datorecibidodos == "Malestar Estomacal"){
             imagendos.image = UIImage(named: "c102p.jpg")
+            
         }
         
         if(datorecibidodos == "Esguince"){
             imagendos.image = UIImage(named: "c103p.jpg")
+            
         }
         
         if(datorecibidodos == "Caída sin perdida de conciencia"){
             imagendos.image = UIImage(named: "c104p.jpg")
+            
         }
                
     }

@@ -10,7 +10,7 @@ import UIKit
 class QuimicaunoController: UIViewController {
     
     @IBOutlet weak var imagen: UIImageView!
-    
+    var codigoenfermedad: String?
     @IBOutlet weak var bpro: UIButton!
     
     var datorecibido:String?
@@ -20,12 +20,22 @@ class QuimicaunoController: UIViewController {
         
         if(datorecibido == "Riesgo Químico"){
             imagen.image = UIImage(named: "c500.jpg")
+            codigoenfermedad = "500"
         }
   }
     
     @IBAction func fbprocedimiento(_ sender: Any) {
         self.performSegue(withIdentifier: "segueqdos", sender: datorecibido)
         print("salio del boton")
+    }
+    
+    
+    @IBAction func bpaciente(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "paciente") as! PacienteController
+        newViewController.codigoenfermedad =  codigoenfermedad
+        self.navigationController?.pushViewController(newViewController, animated: true)
+        self.present(newViewController, animated: true, completion: nil)
     }
     
     

@@ -15,7 +15,6 @@ class MenuController: UIViewController {
     @IBOutlet weak var txtzona: UILabel!
     @IBOutlet weak var imagenperfil: UIImageView!
     
-
     var nombre:String?
     var apellidos:String?
     var puesto:String?
@@ -23,7 +22,6 @@ class MenuController: UIViewController {
     var email: String?
     var passs: String?
     var id: Int?
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -162,7 +160,7 @@ class MenuController: UIViewController {
         guard let data = data, error == nil else { return }
         DispatchQueue.main.async() {    // execute on main thread
             self.imagenperfil.image = UIImage(data: data)
-            self.imagenperfil.layer.cornerRadius = self.imagenperfil.bounds.size.width / 2.0
+          //  self.imagenperfil.layer.cornerRadius = self.imagenperfil.bounds.size.width / 4.0
         }
     }
     task.resume()

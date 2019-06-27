@@ -14,6 +14,7 @@ class QuimicadosController: UIViewController {
     var jsonArray: NSArray?
     var numerof: String?
     
+    
     var datorecibido:String?
     
     override func viewDidLoad() {
@@ -21,6 +22,7 @@ class QuimicadosController: UIViewController {
         
         if(datorecibido == "Riesgo Químico"){
             imagendos.image = UIImage(named: "c500p.jpg")
+            
         }
         
     }

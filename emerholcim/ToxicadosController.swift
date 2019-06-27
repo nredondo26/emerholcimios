@@ -22,14 +22,17 @@ class ToxicadosController: UIViewController {
         
         if(datorecibido == "Congestíon Alcohólica/ Etilismo"){
             imagendos.image = UIImage(named: "c400p.jpg")
+            
         }
         
         if(datorecibido == "Efectos por uso de Drogas"){
             imagendos.image = UIImage(named: "c401p.jpg")
+            
         }
         
         if(datorecibido == "Envenenamiento por Insectos"){
             imagendos.image = UIImage(named: "c402p.jpg")
+            
         }
         
     }

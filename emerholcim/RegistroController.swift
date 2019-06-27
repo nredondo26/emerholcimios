@@ -7,6 +7,8 @@
 
 import UIKit
 import Alamofire
+import Toaster
+import Toast_Swift
 
 
 class RegistroController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate,UIPickerViewDataSource,UIPickerViewDelegate {
@@ -151,19 +153,30 @@ class RegistroController: UIViewController,UIImagePickerControllerDelegate, UINa
                 multipartFormData.append(value.data(using: String.Encoding.utf8)!, withName: key)
             }
         },
-                         to:urlReq)
+        to:urlReq)
         { (result) in
             switch result {
             case .success(let upload, _, _):
                 
                 upload.uploadProgress(closure: { (progress) in
-                    print("Upload Progress: \(progress.fractionCompleted)")
+                   // print("Upload Progress: \(progress.fractionCompleted)")
                 })
                 
                 upload.responseJSON { response in
-                    print(response.result.value)
+                   // print(response.result.value!)
                     if let dic = response.result.value as? NSDictionary{
-                        //do your action base on Api Return failed/success
+                        let estado: String = dic["estado"]! as! String
+                        if (estado == "exitoso"){
+                            
+                            self.view.hideToastActivity()
+                            Toast(text: "Registro Exitoso").show()
+                            
+                            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                            let newViewController = storyBoard.instantiateViewController(withIdentifier: "loginp") as! ViewController
+                            self.navigationController?.pushViewController(newViewController, animated: true)
+                            self.present(newViewController, animated: true, completion: nil)
+                            
+                        }
                     }
                 }
                 
@@ -190,7 +203,8 @@ class RegistroController: UIViewController,UIImagePickerControllerDelegate, UINa
         
         let valorzona = zonainfo(zona: zonar)
         
-        print(imagen.image!)
+        self.view.makeToastActivity(.center)
+     //   print(imagen.image!)
         
         uploadImage(img: imagen.image!, nombre: nombrer, apellidos: apellidosr, zona: valorzona, cargos: cargosr, email: emailr, password: passwordr, codigoempleado: codr)
         
