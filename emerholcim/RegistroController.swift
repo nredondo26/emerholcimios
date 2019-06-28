@@ -167,16 +167,22 @@ class RegistroController: UIViewController,UIImagePickerControllerDelegate, UINa
                     if let dic = response.result.value as? NSDictionary{
                         let estado: String = dic["estado"]! as! String
                         if (estado == "exitoso"){
-                            
                             self.view.hideToastActivity()
                             Toast(text: "Registro Exitoso").show()
-                            
                             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                             let newViewController = storyBoard.instantiateViewController(withIdentifier: "loginp") as! ViewController
                             self.navigationController?.pushViewController(newViewController, animated: true)
                             self.present(newViewController, animated: true, completion: nil)
-                            
                         }
+                        if (estado == "registrado"){
+                            self.view.hideToastActivity()
+                            Toast(text: "Usuario ya se encuentra Registrado").show()
+                        }
+                        if (estado == "Codnot"){
+                            self.view.hideToastActivity()
+                            Toast(text: "Codigo de empleado no encontrado").show()
+                        }
+                        
                     }
                 }
                 
