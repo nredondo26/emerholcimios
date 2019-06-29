@@ -42,7 +42,7 @@ class mapa: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate{
         }
         
         let sorceCoordinates = locationManager.location?.coordinate
-      //  let sorceCoordinates  = CLLocationCoordinate2DMake(4.7361074, -74.0934025)
+        //let sorceCoordinates  = CLLocationCoordinate2DMake(4.7361074, -74.0934025)
         let destCoordinates = CLLocationCoordinate2DMake(uno!, dos!)
         
         let sorcePlacemark = MKPlacemark(coordinate: sorceCoordinates!)
