@@ -35,6 +35,7 @@
 		8A8F745322A37FC400444DF0 /* ToxicologicasControlles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F745222A37FC400444DF0 /* ToxicologicasControlles.swift */; };
 		8A8F745722A380A800444DF0 /* QuimicaControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F745622A380A800444DF0 /* QuimicaControllers.swift */; };
 		8AAA717E22B9ADBF0085E179 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAA717D22B9ADBF0085E179 /* MapKit.framework */; };
+		8ACB657022CC1A5800CECB08 /* ActualizarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB656F22CC1A5800CECB08 /* ActualizarController.swift */; };
 		8AD8F82A22AA0ECD00601097 /* RegistroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD8F82922AA0ECD00601097 /* RegistroController.swift */; };
 		8AEDF25B22A5BFF200978CE0 /* ToxicaunoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEDF25A22A5BFF200978CE0 /* ToxicaunoController.swift */; };
 		8AEDF25D22A5C2F900978CE0 /* ToxicadosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEDF25C22A5C2F900978CE0 /* ToxicadosController.swift */; };
@@ -104,6 +105,7 @@
 		8A8F745222A37FC400444DF0 /* ToxicologicasControlles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToxicologicasControlles.swift; sourceTree = "<group>"; };
 		8A8F745622A380A800444DF0 /* QuimicaControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuimicaControllers.swift; sourceTree = "<group>"; };
 		8AAA717D22B9ADBF0085E179 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8ACB656F22CC1A5800CECB08 /* ActualizarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualizarController.swift; sourceTree = "<group>"; };
 		8AD8F82922AA0ECD00601097 /* RegistroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroController.swift; sourceTree = "<group>"; };
 		8AEDF25A22A5BFF200978CE0 /* ToxicaunoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToxicaunoController.swift; sourceTree = "<group>"; };
 		8AEDF25C22A5C2F900978CE0 /* ToxicadosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToxicadosController.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				8AFCCF0722B5C55D0079E825 /* mapa.swift */,
 				8A819DF222BB0B0E002949BA /* boton.swift */,
 				8A60D86222C5209D00C88F67 /* InicioController.swift */,
+				8ACB656F22CC1A5800CECB08 /* ActualizarController.swift */,
 			);
 			path = emerholcim;
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 				8A89480322A59866009AB895 /* QuimicaunoControllers.swift in Sources */,
 				8A042B5222A0BFD90017C487 /* MenuController.swift in Sources */,
 				8A819DF322BB0B0E002949BA /* boton.swift in Sources */,
+				8ACB657022CC1A5800CECB08 /* ActualizarController.swift in Sources */,
 				8A60D86322C5209D00C88F67 /* InicioController.swift in Sources */,
 				8A8F745722A380A800444DF0 /* QuimicaControllers.swift in Sources */,
 				8A8F745122A37FAE00444DF0 /* GraveControllers.swift in Sources */,

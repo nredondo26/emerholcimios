@@ -6,7 +6,8 @@
 //
 
 import UIKit
-
+import Toast_Swift
+import Toaster
 
 class MenuController: UIViewController {
     
@@ -14,6 +15,7 @@ class MenuController: UIViewController {
     @IBOutlet weak var txtcargo: UILabel!
     @IBOutlet weak var txtzona: UILabel!
     @IBOutlet weak var imagenperfil: UIImageView!
+    @IBOutlet weak var opciones: UIButton!
     
     var nombre:String?
     var apellidos:String?
@@ -32,7 +34,90 @@ class MenuController: UIViewController {
             llenar(correo: email!, clavee: passs!)
         }
     }
+    
+    
+    @IBAction func opciones(_ sender: Any) {
         
+        func printActionTitle(_ action: UIAlertAction) {
+            print("You tapped \(action.title!)")
+        }
+        
+        func cerrarsesion(_ action: UIAlertAction){
+            self.cerrar()
+        }
+        
+        func eliminarcuenta(_ action: UIAlertAction){
+            self.eliminar()
+        }
+        
+        func cambiarzona(_ action: UIAlertAction){
+            self.cambiarzonas()
+        }
+        
+        func editarinformacion(_ action: UIAlertAction){
+            self.editarinfo()
+        }
+        
+        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        alertController.addAction(UIAlertAction(title: "Cambiar de zona", style: .default, handler: cambiarzona))
+        alertController.addAction(UIAlertAction(title: "Editar Informacion", style: .default, handler: editarinformacion))
+        alertController.addAction(UIAlertAction(title: "Eliminar Cuenta", style: .destructive, handler: eliminarcuenta))
+        alertController.addAction(UIAlertAction(title: "Cerrar Sesión", style: .default, handler: cerrarsesion))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: printActionTitle))
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func cambiarzonas(){
+        
+    }
+    
+    func editarinfo(){
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "editarperfil") as! ActualizarController
+        self.navigationController?.pushViewController(newViewController, animated: true)
+        self.present(newViewController, animated: true, completion: nil)
+    }
+
+    
+    func eliminar(){
+        let iddoctenido = UserDefaults.standard.value(forKey: "id")
+        
+        let postString = "id=\(iddoctenido!)"
+        let url = URL(string: "http://appholcim.com/eliminarcuenta.php")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"//tipo de envio -> metodo post
+        request.httpBody = postString.data(using: .utf8)
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data else {//si existe un error se termina la funcion
+                print("solicitud fallida \(String(describing: error))")//manejamos el error
+                return //rompemos el bloque de codigo
+            }
+            do {//creamos nuestro objeto json
+                if let json = try JSONSerialization.jsonObject(with: data) as? [String: String] {
+                    DispatchQueue.main.async {//proceso principal
+                        let estado = json["estado"]//constante
+                        if (estado == "si"){
+                            Toast(text: "Usuario Eliminado Correctamente").show()
+                            self.cerrar()
+                        }
+                    }
+                }
+            } catch let parseError {//manejamos el error
+                print("error al parsear: \(parseError)")
+                let responseString = String(data: data, encoding: .utf8)
+                print("respuesta : \(String(describing: responseString))")
+            }
+        }
+        task.resume()
+    }
+    
+    func cerrar()  {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "loginp") as! ViewController
+        self.navigationController?.pushViewController(newViewController, animated: true)
+        self.present(newViewController, animated: true, completion: nil)
+    }
+    
     func comprovarpreferencias() -> Bool {
         let emailp = UserDefaults.standard.value(forKey: "emailp")
         if(emailp != nil){
@@ -50,12 +135,14 @@ class MenuController: UIViewController {
         let zonp = UserDefaults.standard.value(forKey: "zonap") as! String
         let imagpp = UserDefaults.standard.value(forKey: "imagenperfilp")
         
+        
         self.txtnombre.text = "\(nomp) \(apellp)"
         self.txtcargo.text = areap
         self.txtzona.text = self.zonainfo(zona: zonp)
         self.cargarimagen(img: imagpp as! String)
         
     }
+    
     
     func llenar(correo: String, clavee: String) {
         

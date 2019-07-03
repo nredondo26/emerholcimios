@@ -171,7 +171,7 @@ class RegistroController: UIViewController,UIImagePickerControllerDelegate, UINa
         
         let nombrer = nombre.text!
         let apellidosr = apellidos.text!
-      let zonar = zona.text!
+        let zonar = zona.text!
         let cargosr = cargos.text!
         let emailr = email.text!
         let passwordr = password.text!
