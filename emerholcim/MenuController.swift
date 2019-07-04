@@ -112,6 +112,11 @@ class MenuController: UIViewController {
     }
     
     func cerrar()  {
+
+        let domain = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: domain)
+        UserDefaults.standard.synchronize()
+
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "loginp") as! ViewController
         self.navigationController?.pushViewController(newViewController, animated: true)

@@ -22,6 +22,8 @@
 		8A107F0822B08FEE009B92F3 /* InternoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A107F0722B08FEE009B92F3 /* InternoController.swift */; };
 		8A5A259722AC4DE000AAC2CC /* PacienteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A259622AC4DE000AAC2CC /* PacienteController.swift */; };
 		8A60D86322C5209D00C88F67 /* InicioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60D86222C5209D00C88F67 /* InicioController.swift */; };
+		8A7A27D922CD728F00E9AC6F /* PlantasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A27D822CD728F00E9AC6F /* PlantasCell.swift */; };
+		8A7A27DB22CD771500E9AC6F /* CambiodePlantas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A27DA22CD771500E9AC6F /* CambiodePlantas.swift */; };
 		8A7A530A22A49B4100749821 /* Levelunocontrollers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A530922A49B4100749821 /* Levelunocontrollers.swift */; };
 		8A7A530E22A4B43200749821 /* LeveldosControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A530D22A4B43200749821 /* LeveldosControllers.swift */; };
 		8A819DF322BB0B0E002949BA /* boton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A819DF222BB0B0E002949BA /* boton.swift */; };
@@ -92,6 +94,8 @@
 		8A107F0722B08FEE009B92F3 /* InternoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternoController.swift; sourceTree = "<group>"; };
 		8A5A259622AC4DE000AAC2CC /* PacienteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacienteController.swift; sourceTree = "<group>"; };
 		8A60D86222C5209D00C88F67 /* InicioController.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = InicioController.swift; sourceTree = "<group>"; };
+		8A7A27D822CD728F00E9AC6F /* PlantasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantasCell.swift; sourceTree = "<group>"; };
+		8A7A27DA22CD771500E9AC6F /* CambiodePlantas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CambiodePlantas.swift; sourceTree = "<group>"; };
 		8A7A530922A49B4100749821 /* Levelunocontrollers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Levelunocontrollers.swift; sourceTree = "<group>"; };
 		8A7A530D22A4B43200749821 /* LeveldosControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeveldosControllers.swift; sourceTree = "<group>"; };
 		8A819DF222BB0B0E002949BA /* boton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boton.swift; sourceTree = "<group>"; };
@@ -227,6 +231,8 @@
 				8A819DF222BB0B0E002949BA /* boton.swift */,
 				8A60D86222C5209D00C88F67 /* InicioController.swift */,
 				8ACB656F22CC1A5800CECB08 /* ActualizarController.swift */,
+				8A7A27D822CD728F00E9AC6F /* PlantasCell.swift */,
+				8A7A27DA22CD771500E9AC6F /* CambiodePlantas.swift */,
 			);
 			path = emerholcim;
 			sourceTree = "<group>";
@@ -525,6 +531,7 @@
 				8A8F745322A37FC400444DF0 /* ToxicologicasControlles.swift in Sources */,
 				8AF94EE822B331BD00BC16C0 /* EmergenciasController.swift in Sources */,
 				8A7A530A22A49B4100749821 /* Levelunocontrollers.swift in Sources */,
+				8A7A27DB22CD771500E9AC6F /* CambiodePlantas.swift in Sources */,
 				8AFF91E322B1F874006F82E6 /* PokemonCell.swift in Sources */,
 				8A0D45BD22B566A800A7A475 /* CoordenadasCell.swift in Sources */,
 				8AF94EE622B330E500BC16C0 /* BrigadistasController.swift in Sources */,
@@ -536,6 +543,7 @@
 				8AEDF25B22A5BFF200978CE0 /* ToxicaunoController.swift in Sources */,
 				8A8947F722A583CA009AB895 /* Regutaladaunocontrollers.swift in Sources */,
 				8A7A530E22A4B43200749821 /* LeveldosControllers.swift in Sources */,
+				8A7A27D922CD728F00E9AC6F /* PlantasCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

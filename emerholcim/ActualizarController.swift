@@ -80,9 +80,29 @@ class ActualizarController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        solomostrar()
+        
         zona.optionArray = plantas
         cargos.optionArray = listacargos
         
+    }
+    
+    func solomostrar(){
+        
+        let nomp:String = UserDefaults.standard.value(forKey: "nombrep") as! String
+        let apellp:String = UserDefaults.standard.value(forKey: "apellidosp") as! String
+        let areap = UserDefaults.standard.value(forKey: "areap") as! String
+        let zonp = UserDefaults.standard.value(forKey: "zonap") as! String
+        let emailp = UserDefaults.standard.value(forKey: "emailp") as! String
+        let passwordp = UserDefaults.standard.value(forKey: "passwordp") as! String
+        
+        self.nombre.text = "\(nomp)"
+        self.apellidos.text = "\(apellp)"
+        self.cargos.text = areap
+        self.zona.text = self.zonainfodos(zona: zonp)
+        self.email.text = "\(emailp)"
+        self.password.text = "\(passwordp)"
+
     }
     
     func zonainfo(zona: String) -> String {
@@ -103,19 +123,30 @@ class ActualizarController: UIViewController{
         if zona == "Pipiral" { zonaf = "27" }
         return zonaf!
 }
-    
+ 
+    func zonainfodos(zona: String) -> String {
+        var zonaf: String?
+        if zona == "1" { zonaf = "Bello" }
+        if zona == "2" { zonaf = "Buga" }
+        if zona == "3" { zonaf = "Cali Sur" }
+        if zona == "4" { zonaf = "Cemento" }
+        if zona == "5" { zonaf = "Chía" }
+        if zona == "6" { zonaf = "Floridablanca" }
+        if zona == "7" { zonaf = "Nobsa" }
+        if zona == "8" { zonaf = "Palmira" }
+        if zona == "9" { zonaf = "Puente Aranda" }
+        if zona == "10" { zonaf = "Ricaurte" }
+        if zona == "11" { zonaf = "Teleport" }
+        if zona == "12" { zonaf = "1Tunja" }
+        if zona == "13" { zonaf = "La Flor" }
+        if zona == "27" { zonaf = "Pipiral" }
+        return zonaf!
+    }
+
     
     @IBAction func Actualizarinformacionp(_ sender: Any) {
         actualizar()
     }
-    
-   /* $id =$_POST['id'];
-    $nombre = $_POST['nombre'];
-    $apellidos = $_POST['apellidos'];
-    $zona = $_POST['zona'];
-    $area = $_POST['area'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];*/
     
     func actualizar() {
         
@@ -132,8 +163,6 @@ class ActualizarController: UIViewController{
             return
         }
         
-   //     self.view.makeToastActivity(.center)
-    
         let postString = "nombre=\(nombrer)&apellidos=\(apellidosr)&zona=\(zonainfo(zona: zonar))&area=\(cargosr)&email=\(emailr)&password=\(passwordr)&id=\(idr!)"
         
         print("envar solicitud \(postString)")
@@ -164,6 +193,11 @@ class ActualizarController: UIViewController{
                         if(repuesta == "si"){
                             
                             Toast(text: "Informacion Actualizada").show()
+                            
+                            let domain = Bundle.main.bundleIdentifier!
+                            UserDefaults.standard.removePersistentDomain(forName: domain)
+                            UserDefaults.standard.synchronize()
+                            
                             
                             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                             let newViewController = storyBoard.instantiateViewController(withIdentifier: "loginp") as! ViewController
