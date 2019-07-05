@@ -68,7 +68,10 @@ class MenuController: UIViewController {
     }
     
     func cambiarzonas(){
-        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "editarzona") as! ZonaController
+        self.navigationController?.pushViewController(newViewController, animated: true)
+        self.present(newViewController, animated: true, completion: nil)
     }
     
     func editarinfo(){

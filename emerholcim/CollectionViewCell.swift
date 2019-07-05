@@ -9,10 +9,6 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet var bookImage : UIImageView!
-    
-    func displayContent(image: UIImage) {
-        bookImage.image = image
-    }
+    @IBOutlet weak var imagen: UIImageView!
     
 }
