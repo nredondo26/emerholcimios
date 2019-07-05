@@ -9,7 +9,7 @@ import UIKit
 
 class ZonaController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    let items = ["bellog","chiag","floridag","nobsag","palmirag","villavicenciog"]
+    let items = ["bellog","palmirag","chiag","floridag","nobsag","villavicenciog"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +26,31 @@ class ZonaController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.item)
+        
+        let opcion = indexPath.row
+        
+        self.performSegue(withIdentifier: "mostrarplantas", sender: opcion)
+        
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "mostrarplantas"){
+            
+            let recibido = sender!
+            
+            print(recibido)
+            
+            let objeto : CambiodezonaController = segue.destination  as! CambiodezonaController
+            
+            objeto.datorecibido = recibido as? Int
+            
+            let backItem = UIBarButtonItem()
+            backItem.title = "Atrás"
+            navigationItem.backBarButtonItem = backItem
+            
+        }
+    }
     
-    
-    
+  
 }
 
