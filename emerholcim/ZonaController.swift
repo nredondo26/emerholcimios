@@ -9,7 +9,7 @@ import UIKit
 
 class ZonaController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    let items = ["bellog","palmirag","chiag","floridag","nobsag","villavicenciog"]
+    let items = ["bellog","chiag","palmirag","floridag","nobsag","villavicenciog"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +28,16 @@ class ZonaController: UIViewController, UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let opcion = indexPath.row
+        var campo: Int?
         
-        self.performSegue(withIdentifier: "mostrarplantas", sender: opcion)
+        if(opcion == 0){ campo = 1 }
+        if(opcion == 1){ campo = 5 }
+        if(opcion == 2){ campo = 6 }
+        if(opcion == 3){ campo = 2 }
+        if(opcion == 4){ campo = 4 }
+        if(opcion == 5){ campo = 3 }
+        
+        self.performSegue(withIdentifier: "mostrarplantas", sender: campo)
         
     }
     

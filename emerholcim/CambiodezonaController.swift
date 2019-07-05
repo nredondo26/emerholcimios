@@ -7,15 +7,43 @@
 
 import UIKit
 
-class CambiodezonaController: UIViewController {
+class CambiodezonaController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.nombreArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! Zonacell
+        cell.nombre.text = self.nombreArray[indexPath.row]
+        cell.imagen.text = self.imagenArray[indexPath.row]
+        cell.id.text = self.idArray[indexPath.row]
+        return cell
+    }
+    
+    /*func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let idseleccionado = self.telefonoArray[indexPath.row]
+        Utils.call(numerocall: idseleccionado)
+        
+    }*/
+    
+    
+    @IBOutlet weak var tableView: UITableView!
     
     var datorecibido: Int?
-    
+
     var jsonArray: NSArray?
     var nombreArray: Array<String> = []
+    var idArray: Array<String> = []
+    var imagenArray: Array<String> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         
         cargardatos(region: datorecibido!)
         
@@ -39,26 +67,28 @@ class CambiodezonaController: UIViewController {
             
             do {//creamos nuestro objeto json
                 
-                //    print("recibimos respuesta")
+                    print("recibimos respuesta")
                 
                 if let json = try JSONSerialization.jsonObject(with: data) as? Array<Any> {
                     
                     DispatchQueue.main.async {
                         
-                        print(json)
+                      //  print(json)
                         
-                       /* self.jsonArray = json as NSArray
+                        self.jsonArray = json as NSArray
                         
                         for item in self.jsonArray! as! [NSDictionary]{
-                           /* let name = item["nombre"] as? String
-                            let phone = item["telefono"] as? String
-                            self.nombreArray.append(name!)
-                            self.telefonoArray.append(phone!)*/
-                            // print("\(String(describing: name)) y su telefono es: \(String(describing: phone))")
+                            let nombre = item["nombre"] as? String
+                            let imagen = item["imagen"] as? String
+                            let id = item["id"] as? String
+                            self.nombreArray.append(nombre!)
+                            self.imagenArray.append(imagen!)
+                            self.idArray.append(id!)
+                             print("\(String(describing: nombre)) y su telefono es: \(String(describing: imagen))")
                             
-                        }*/
+                        }
                         
-                      //  self.tableView.reloadData()
+                        self.tableView.reloadData()
                         
                     }
                     

@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "bellog.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "bellog.png",
       "scale" : "2x"
     },
     {

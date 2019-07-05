@@ -38,6 +38,7 @@
 		8AA8941822CEBF4F00EAF142 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA8941722CEBF4F00EAF142 /* CollectionViewCell.swift */; };
 		8AA8941A22CEC0B400EAF142 /* ZonaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA8941922CEC0B400EAF142 /* ZonaController.swift */; };
 		8AAA717E22B9ADBF0085E179 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAA717D22B9ADBF0085E179 /* MapKit.framework */; };
+		8AB167B022CFD7FA001074E2 /* Zonacell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB167AF22CFD7FA001074E2 /* Zonacell.swift */; };
 		8AC52C1722CFB1D2006C662F /* CambiodezonaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC52C1622CFB1D2006C662F /* CambiodezonaController.swift */; };
 		8ACB657022CC1A5800CECB08 /* ActualizarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB656F22CC1A5800CECB08 /* ActualizarController.swift */; };
 		8AD8F82A22AA0ECD00601097 /* RegistroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD8F82922AA0ECD00601097 /* RegistroController.swift */; };
@@ -112,6 +113,7 @@
 		8AA8941722CEBF4F00EAF142 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		8AA8941922CEC0B400EAF142 /* ZonaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaController.swift; sourceTree = "<group>"; };
 		8AAA717D22B9ADBF0085E179 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8AB167AF22CFD7FA001074E2 /* Zonacell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zonacell.swift; sourceTree = "<group>"; };
 		8AC52C1622CFB1D2006C662F /* CambiodezonaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CambiodezonaController.swift; sourceTree = "<group>"; };
 		8ACB656F22CC1A5800CECB08 /* ActualizarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualizarController.swift; sourceTree = "<group>"; };
 		8AD8F82922AA0ECD00601097 /* RegistroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroController.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				52F6FB1A2267EFB400C4D53A /* AppDelegate.swift */,
+				8AB167AF22CFD7FA001074E2 /* Zonacell.swift */,
 				8AC52C1622CFB1D2006C662F /* CambiodezonaController.swift */,
 				52F6FB1C2267EFB400C4D53A /* ViewController.swift */,
 				8AA8941722CEBF4F00EAF142 /* CollectionViewCell.swift */,
@@ -542,6 +545,7 @@
 				8A0D45BD22B566A800A7A475 /* CoordenadasCell.swift in Sources */,
 				8AF94EE622B330E500BC16C0 /* BrigadistasController.swift in Sources */,
 				52F6FB1D2267EFB400C4D53A /* ViewController.swift in Sources */,
+				8AB167B022CFD7FA001074E2 /* Zonacell.swift in Sources */,
 				8AEDF26122A5C91E00978CE0 /* GravedosController.swift in Sources */,
 				8AC52C1722CFB1D2006C662F /* CambiodezonaController.swift in Sources */,
 				8A89480522A59BEA009AB895 /* QuimicadosController.swift in Sources */,
