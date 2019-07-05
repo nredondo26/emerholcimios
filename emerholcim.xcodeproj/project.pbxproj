@@ -42,11 +42,11 @@
 		8AC52C1722CFB1D2006C662F /* CambiodezonaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC52C1622CFB1D2006C662F /* CambiodezonaController.swift */; };
 		8ACB657022CC1A5800CECB08 /* ActualizarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB656F22CC1A5800CECB08 /* ActualizarController.swift */; };
 		8AD8F82A22AA0ECD00601097 /* RegistroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD8F82922AA0ECD00601097 /* RegistroController.swift */; };
+		8AE103DF22D003A00014A68D /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE103DE22D003A00014A68D /* iOSDropDown.framework */; };
 		8AEDF25B22A5BFF200978CE0 /* ToxicaunoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEDF25A22A5BFF200978CE0 /* ToxicaunoController.swift */; };
 		8AEDF25D22A5C2F900978CE0 /* ToxicadosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEDF25C22A5C2F900978CE0 /* ToxicadosController.swift */; };
 		8AEDF25F22A5C63300978CE0 /* GraveunoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEDF25E22A5C63300978CE0 /* GraveunoController.swift */; };
 		8AEDF26122A5C91E00978CE0 /* GravedosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEDF26022A5C91E00978CE0 /* GravedosController.swift */; };
-		8AF58BED22C83A6F00FB03DF /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF58BEC22C83A6F00FB03DF /* iOSDropDown.framework */; };
 		8AF94EE422B32E5800BC16C0 /* ExternoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF94EE322B32E5800BC16C0 /* ExternoController.swift */; };
 		8AF94EE622B330E500BC16C0 /* BrigadistasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF94EE522B330E500BC16C0 /* BrigadistasController.swift */; };
 		8AF94EE822B331BD00BC16C0 /* EmergenciasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF94EE722B331BD00BC16C0 /* EmergenciasController.swift */; };
@@ -117,6 +117,7 @@
 		8AC52C1622CFB1D2006C662F /* CambiodezonaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CambiodezonaController.swift; sourceTree = "<group>"; };
 		8ACB656F22CC1A5800CECB08 /* ActualizarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualizarController.swift; sourceTree = "<group>"; };
 		8AD8F82922AA0ECD00601097 /* RegistroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroController.swift; sourceTree = "<group>"; };
+		8AE103DE22D003A00014A68D /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AEDF25A22A5BFF200978CE0 /* ToxicaunoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToxicaunoController.swift; sourceTree = "<group>"; };
 		8AEDF25C22A5C2F900978CE0 /* ToxicadosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToxicadosController.swift; sourceTree = "<group>"; };
 		8AEDF25E22A5C63300978CE0 /* GraveunoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraveunoController.swift; sourceTree = "<group>"; };
@@ -139,7 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AF58BED22C83A6F00FB03DF /* iOSDropDown.framework in Frameworks */,
+				8AE103DF22D003A00014A68D /* iOSDropDown.framework in Frameworks */,
 				8AAA717E22B9ADBF0085E179 /* MapKit.framework in Frameworks */,
 				70424E8C2B4A426DE42ED764 /* Pods_emerholcim.framework in Frameworks */,
 			);
@@ -267,6 +268,7 @@
 		D357D04C1E98CB3C5CCC47D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8AE103DE22D003A00014A68D /* iOSDropDown.framework */,
 				8AF58BEC22C83A6F00FB03DF /* iOSDropDown.framework */,
 				8AF58BE822C82C6C00FB03DF /* iOSDropDown.framework */,
 				8AAA717D22B9ADBF0085E179 /* MapKit.framework */,
@@ -289,7 +291,7 @@
 				52F6FB142267EFB400C4D53A /* Frameworks */,
 				52F6FB152267EFB400C4D53A /* Resources */,
 				5C6A15D18BD7B72DA465F134 /* [CP] Embed Pods Frameworks */,
-				912BF475C4DE95BE1FB87D86 /* [CP] Copy Pods Resources */,
+				7BEC2C1DD829585F91D0811E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -452,6 +454,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-emerholcim/Pods-emerholcim-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7BEC2C1DD829585F91D0811E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-emerholcim/Pods-emerholcim-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-emerholcim/Pods-emerholcim-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-emerholcim/Pods-emerholcim-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		90390BAA78D875A0E8662CFA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -472,23 +491,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		912BF475C4DE95BE1FB87D86 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-emerholcim/Pods-emerholcim-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-emerholcim/Pods-emerholcim-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-emerholcim/Pods-emerholcim-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D0BDFAD066F5F2FFE328833C /* [CP] Check Pods Manifest.lock */ = {

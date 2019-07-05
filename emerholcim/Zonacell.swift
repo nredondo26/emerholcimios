@@ -10,8 +10,9 @@ import UIKit
 class Zonacell: UITableViewCell {
     
     @IBOutlet weak var nombre: UILabel!
-    @IBOutlet weak var imagen: UILabel!
-    @IBOutlet weak var id: UILabel!
+    @IBOutlet weak var imagen: UIImageView!
+    
+    var id: Int!
     
 
     override func awakeFromNib() {
