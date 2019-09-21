@@ -1,0 +1,378 @@
+
+/* Class = "UINavigationItem"; title = "Paciente"; ObjectID = "0HT-bo-qFS"; */
+"0HT-bo-qFS.title" = "Paciente";
+
+/* Class = "UINavigationItem"; title = "Emerholcim"; ObjectID = "0QB-jQ-cIV"; */
+"0QB-jQ-cIV.title" = "Emerholcim";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "12j-Kb-H6z"; */
+"12j-Kb-H6z.title" = "Menu";
+
+/* Class = "UIButton"; normalTitle = "PROCEDIMIENTO"; ObjectID = "19h-1M-NuD"; */
+"19h-1M-NuD.normalTitle" = "PROCEDIMIENTO";
+
+/* Class = "UIBarButtonItem"; title = "Lista"; ObjectID = "20N-3g-Oj5"; */
+"20N-3g-Oj5.title" = "Lista";
+
+/* Class = "UILabel"; text = "Direccion"; ObjectID = "2N2-Ft-0Yh"; */
+"2N2-Ft-0Yh.text" = "Direccion";
+
+/* Class = "UITextField"; placeholder = "Email : "; ObjectID = "2aZ-gk-Xjs"; */
+"2aZ-gk-Xjs.placeholder" = "Email : ";
+
+/* Class = "UITextField"; placeholder = "Apellidos"; ObjectID = "2er-T2-tWC"; */
+"2er-T2-tWC.placeholder" = "Apellidos";
+
+/* Class = "UITextField"; placeholder = "Contraseña"; ObjectID = "3BQ-A3-K5k"; */
+"3BQ-A3-K5k.placeholder" = "Contraseña";
+
+/* Class = "UIButton"; normalTitle = "Traslado"; ObjectID = "3EF-5M-PAf"; */
+"3EF-5M-PAf.normalTitle" = "Traslado";
+
+/* Class = "UILabel"; text = "Plan de Repuesta"; ObjectID = "3z0-NA-Lz6"; */
+"3z0-NA-Lz6.text" = "Plan de Repuesta";
+
+/* Class = "UIButton"; normalTitle = "Paciente"; ObjectID = "4On-oR-wM1"; */
+"4On-oR-wM1.normalTitle" = "Paciente";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "5Bh-DI-Gfp"; */
+"5Bh-DI-Gfp.placeholder" = "Email";
+
+/* Class = "UIViewController"; title = "Brigadistas"; ObjectID = "668-gQ-oIn"; */
+"668-gQ-oIn.title" = "Brigadistas";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "6Mw-QD-qF0"; */
+"6Mw-QD-qF0.title" = "Menu";
+
+/* Class = "UITextField"; placeholder = "Cargos"; ObjectID = "6UZ-4n-Fqc"; */
+"6UZ-4n-Fqc.placeholder" = "Cargos";
+
+/* Class = "UITextField"; placeholder = "Codigo del empleado"; ObjectID = "7Va-m3-qgi"; */
+"7Va-m3-qgi.placeholder" = "Codigo del empleado";
+
+/* Class = "UIViewController"; title = "Zona"; ObjectID = "7fl-2C-wvo"; */
+"7fl-2C-wvo.title" = "Zona";
+
+/* Class = "UINavigationItem"; title = "Emerholcim"; ObjectID = "8GH-xh-ZdE"; */
+"8GH-xh-ZdE.title" = "Emerholcim";
+
+/* Class = "UIButton"; normalTitle = "911"; ObjectID = "A10-dq-9gF"; */
+"A10-dq-9gF.normalTitle" = "911";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "B4s-B8-YL8"; */
+"B4s-B8-YL8.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Emerholcim"; ObjectID = "BIz-kQ-vL6"; */
+"BIz-kQ-vL6.title" = "Emerholcim";
+
+/* Class = "UITextField"; placeholder = "Zona"; ObjectID = "Bod-k0-mTJ"; */
+"Bod-k0-mTJ.placeholder" = "Zona";
+
+/* Class = "UINavigationItem"; title = "Emerholcim"; ObjectID = "DCo-cX-eOy"; */
+"DCo-cX-eOy.title" = "Emerholcim";
+
+/* Class = "UIButton"; normalTitle = "Paciente"; ObjectID = "ETT-TF-ljh"; */
+"ETT-TF-ljh.normalTitle" = "Paciente";
+
+/* Class = "UIViewController"; title = "Traslado"; ObjectID = "EeU-N6-lvk"; */
+"EeU-N6-lvk.title" = "Traslado";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "Emn-Gj-63W"; */
+"Emn-Gj-63W.title" = "Menu";
+
+/* Class = "UIButton"; normalTitle = "PROCEDIMIENTO"; ObjectID = "EvG-7N-Rf0"; */
+"EvG-7N-Rf0.normalTitle" = "PROCEDIMIENTO";
+
+/* Class = "UIButton"; normalTitle = "Traslado"; ObjectID = "Flo-vF-LXU"; */
+"Flo-vF-LXU.normalTitle" = "Traslado";
+
+/* Class = "UINavigationItem"; title = "Emergencia toxicólogica"; ObjectID = "Fzz-4o-969"; */
+"Fzz-4o-969.title" = "Emergencia toxicólogica";
+
+/* Class = "UIBarButtonItem"; title = "Regiones"; ObjectID = "GMh-Ja-nyz"; */
+"GMh-Ja-nyz.title" = "Regiones";
+
+/* Class = "UINavigationItem"; title = "Emergencia regular"; ObjectID = "HAJ-AI-imk"; */
+"HAJ-AI-imk.title" = "Emergencia regular";
+
+/* Class = "UIButton"; normalTitle = "Paciente"; ObjectID = "Hiv-BF-3Od"; */
+"Hiv-BF-3Od.normalTitle" = "Paciente";
+
+/* Class = "UINavigationItem"; title = "Emerholcim"; ObjectID = "Ilh-Si-adZ"; */
+"Ilh-Si-adZ.title" = "Emerholcim";
+
+/* Class = "UINavigationItem"; title = "Editar Perfil"; ObjectID = "LAZ-lc-hpS"; */
+"LAZ-lc-hpS.title" = "Editar Perfil";
+
+/* Class = "UITextField"; placeholder = "Cargos"; ObjectID = "M92-Fh-E9l"; */
+"M92-Fh-E9l.placeholder" = "Cargos";
+
+/* Class = "UIButton"; normalTitle = "Seleccionar imagen"; ObjectID = "MJc-no-kL2"; */
+"MJc-no-kL2.normalTitle" = "Seleccionar imagen";
+
+/* Class = "UIViewController"; title = "Externo"; ObjectID = "Mwt-eU-EE4"; */
+"Mwt-eU-EE4.title" = "Externo";
+
+/* Class = "UIButton"; normalTitle = "INGRESAR"; ObjectID = "N5J-Nf-XqQ"; */
+"N5J-Nf-XqQ.normalTitle" = "INGRESAR";
+
+/* Class = "UIButton"; normalTitle = "PLAN DE EMERGENCIAS"; ObjectID = "NTv-Fs-ctW"; */
+"NTv-Fs-ctW.normalTitle" = "PLAN DE EMERGENCIAS";
+
+/* Class = "UIButton"; normalTitle = "GRAVE"; ObjectID = "Ndv-xy-CNI"; */
+"Ndv-xy-CNI.normalTitle" = "GRAVE";
+
+/* Class = "UIButton"; normalTitle = "ENVIAR"; ObjectID = "NwH-EM-VQc"; */
+"NwH-EM-VQc.normalTitle" = "ENVIAR";
+
+/* Class = "UITextField"; placeholder = "Area de trabajo"; ObjectID = "O3w-15-SWE"; */
+"O3w-15-SWE.placeholder" = "Area de trabajo";
+
+/* Class = "UINavigationItem"; title = "Acidente leve"; ObjectID = "OPQ-ce-FQh"; */
+"OPQ-ce-FQh.title" = "Acidente leve";
+
+/* Class = "UINavigationItem"; title = "Plantas"; ObjectID = "Oac-nS-ast"; */
+"Oac-nS-ast.title" = "Plantas";
+
+/* Class = "UIButton"; normalTitle = "PROCEDIMIENTO"; ObjectID = "Pni-ey-HNH"; */
+"Pni-ey-HNH.normalTitle" = "PROCEDIMIENTO";
+
+/* Class = "UILabel"; text = "Reportar Acidente"; ObjectID = "QTX-Hs-V8Y"; */
+"QTX-Hs-V8Y.text" = "Reportar Acidente";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "QTa-NO-MS9"; */
+"QTa-NO-MS9.text" = "Title";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "QcC-Tm-IIn"; */
+"QcC-Tm-IIn.title" = "Menu";
+
+/* Class = "UINavigationItem"; title = "Emerholcim"; ObjectID = "Qd6-UW-VqT"; */
+"Qd6-UW-VqT.title" = "Emerholcim";
+
+/* Class = "UIButton"; normalTitle = "911"; ObjectID = "RF3-FS-FCt"; */
+"RF3-FS-FCt.normalTitle" = "911";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "RZW-1Y-GBV"; */
+"RZW-1Y-GBV.text" = "Nombre";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "T44-CD-nDH"; */
+"T44-CD-nDH.title" = "Menu";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "T7E-uq-meJ"; */
+"T7E-uq-meJ.title" = "Atras";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "TOi-OY-wFC"; */
+"TOi-OY-wFC.title" = "Menu";
+
+/* Class = "UILabel"; text = "nombrey apellidos"; ObjectID = "TkP-UP-Rmu"; */
+"TkP-UP-Rmu.text" = "nombrey apellidos";
+
+/* Class = "UIBarButtonItem"; title = "Inicio"; ObjectID = "Tom-en-Yr2"; */
+"Tom-en-Yr2.title" = "Inicio";
+
+/* Class = "UITextField"; placeholder = "Contraseña"; ObjectID = "UaC-hF-ySP"; */
+"UaC-hF-ySP.placeholder" = "Contraseña";
+
+/* Class = "UIButton"; normalTitle = "Traslado"; ObjectID = "Uzh-rK-a2A"; */
+"Uzh-rK-a2A.normalTitle" = "Traslado";
+
+/* Class = "UITextField"; placeholder = "Anotaciones"; ObjectID = "VXj-eZ-rbk"; */
+"VXj-eZ-rbk.placeholder" = "Anotaciones";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "Vyi-qJ-C0C"; */
+"Vyi-qJ-C0C.title" = "Menu";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "WHr-28-as3"; */
+"WHr-28-as3.text" = "Subtitle";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "WOB-VP-dbR"; */
+"WOB-VP-dbR.title" = "Menu";
+
+/* Class = "UINavigationItem"; title = "Registro"; ObjectID = "WtZ-oz-F3K"; */
+"WtZ-oz-F3K.title" = "Registro";
+
+/* Class = "UITextField"; placeholder = "Apellidos"; ObjectID = "X3u-Cq-1XW"; */
+"X3u-Cq-1XW.placeholder" = "Apellidos";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "XC4-QA-9cz"; */
+"XC4-QA-9cz.placeholder" = "Email";
+
+/* Class = "UINavigationItem"; title = "Emerholcim"; ObjectID = "Y0n-Gd-xhN"; */
+"Y0n-Gd-xhN.title" = "Emerholcim";
+
+/* Class = "UILabel"; text = "Atencion a Emergencias Medicas"; ObjectID = "Y87-N5-yM8"; */
+"Y87-N5-yM8.text" = "Atencion a Emergencias Medicas";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "YG4-dL-gpv"; */
+"YG4-dL-gpv.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "REGULADA"; ObjectID = "Ypr-wb-vJB"; */
+"Ypr-wb-vJB.normalTitle" = "REGULADA";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "Yuf-65-sAh"; */
+"Yuf-65-sAh.title" = "Menu";
+
+/* Class = "UIButton"; normalTitle = "Traslado"; ObjectID = "aHK-Ms-2Kf"; */
+"aHK-Ms-2Kf.normalTitle" = "Traslado";
+
+/* Class = "UITabBarItem"; title = "Interno"; ObjectID = "aL2-tG-Tmq"; */
+"aL2-tG-Tmq.title" = "Interno";
+
+/* Class = "UIBarButtonItem"; title = "Regresar"; ObjectID = "aUw-ES-bx5"; */
+"aUw-ES-bx5.title" = "Regresar";
+
+/* Class = "UITabBarItem"; title = "Emergencias"; ObjectID = "ag3-0w-dVW"; */
+"ag3-0w-dVW.title" = "Emergencias";
+
+/* Class = "UIBarButtonItem"; title = "Lista"; ObjectID = "cJG-Fm-v8f"; */
+"cJG-Fm-v8f.title" = "Lista";
+
+/* Class = "UIButton"; normalTitle = "Registrar"; ObjectID = "cLS-Lc-fMC"; */
+"cLS-Lc-fMC.normalTitle" = "Registrar";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "coA-fs-cnI"; */
+"coA-fs-cnI.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "PROCEDIMIENTO"; ObjectID = "dW4-DW-xDQ"; */
+"dW4-DW-xDQ.normalTitle" = "PROCEDIMIENTO";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "eF7-il-Kh7"; */
+"eF7-il-Kh7.title" = "Atras";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "eOR-uP-thq"; */
+"eOR-uP-thq.text" = "Subtitle";
+
+/* Class = "UINavigationItem"; title = "Emergencia grave"; ObjectID = "ejj-iT-5YE"; */
+"ejj-iT-5YE.title" = "Emergencia grave";
+
+/* Class = "UITextField"; placeholder = "Password :"; ObjectID = "f9H-S7-C1A"; */
+"f9H-S7-C1A.placeholder" = "Password :";
+
+/* Class = "UITextField"; placeholder = "Nombre"; ObjectID = "fTf-V0-ONr"; */
+"fTf-V0-ONr.placeholder" = "Nombre";
+
+/* Class = "UIBarButtonItem"; title = "Lista"; ObjectID = "fUt-WC-FDY"; */
+"fUt-WC-FDY.title" = "Lista";
+
+/* Class = "UILabel"; text = "area"; ObjectID = "fyp-Qh-jY1"; */
+"fyp-Qh-jY1.text" = "area";
+
+/* Class = "UIBarButtonItem"; title = "Lista"; ObjectID = "gBb-ac-xgK"; */
+"gBb-ac-xgK.title" = "Lista";
+
+/* Class = "UIButton"; normalTitle = "911"; ObjectID = "gVg-Vt-c45"; */
+"gVg-Vt-c45.normalTitle" = "911";
+
+/* Class = "UIButton"; normalTitle = "Paciente"; ObjectID = "gca-ac-MG5"; */
+"gca-ac-MG5.normalTitle" = "Paciente";
+
+/* Class = "UITextField"; placeholder = "Zona"; ObjectID = "hj4-IS-Lb0"; */
+"hj4-IS-Lb0.placeholder" = "Zona";
+
+/* Class = "UIButton"; normalTitle = "INGRESAR"; ObjectID = "ijF-fd-abS"; */
+"ijF-fd-abS.normalTitle" = "INGRESAR";
+
+/* Class = "UINavigationItem"; title = "Emergencia quimica"; ObjectID = "j6K-ZG-g5h"; */
+"j6K-ZG-g5h.title" = "Emergencia quimica";
+
+/* Class = "UIBarButtonItem"; title = "Lista"; ObjectID = "k6H-Bm-Wta"; */
+"k6H-Bm-Wta.title" = "Lista";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "kBC-R4-c1Q"; */
+"kBC-R4-c1Q.title" = "Title";
+
+/* Class = "UILabel"; text = "zona"; ObjectID = "klu-FY-CJT"; */
+"klu-FY-CJT.text" = "zona";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "kq0-Xu-E0r"; */
+"kq0-Xu-E0r.title" = "Atras";
+
+/* Class = "UIButton"; normalTitle = "PROCEDIMIENTO"; ObjectID = "lIf-hG-UtQ"; */
+"lIf-hG-UtQ.normalTitle" = "PROCEDIMIENTO";
+
+/* Class = "UIButton"; normalTitle = "911"; ObjectID = "mPT-so-dht"; */
+"mPT-so-dht.normalTitle" = "911";
+
+/* Class = "UINavigationItem"; title = "Emerholcim"; ObjectID = "oQX-85-DbC"; */
+"oQX-85-DbC.title" = "Emerholcim";
+
+/* Class = "UIButton"; normalTitle = "Registrate"; ObjectID = "px6-ZJ-a7N"; */
+"px6-ZJ-a7N.normalTitle" = "Registrate";
+
+/* Class = "UITabBarItem"; title = "Externo"; ObjectID = "qq3-qo-dSK"; */
+"qq3-qo-dSK.title" = "Externo";
+
+/* Class = "UIButton"; normalTitle = "Registrar Cambios"; ObjectID = "qq6-ME-TWw"; */
+"qq6-ME-TWw.normalTitle" = "Registrar Cambios";
+
+/* Class = "UIViewController"; title = "interno"; ObjectID = "qv9-AX-DsW"; */
+"qv9-AX-DsW.title" = "interno";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "rG4-iU-fy5"; */
+"rG4-iU-fy5.text" = "Subtitle";
+
+/* Class = "UIButton"; normalTitle = "TOXICOLÓGICA"; ObjectID = "rQF-r0-ucV"; */
+"rQF-r0-ucV.normalTitle" = "TOXICOLÓGICA";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "rtx-Xl-mGA"; */
+"rtx-Xl-mGA.title" = "Menu";
+
+/* Class = "UINavigationItem"; title = "Emerholcim"; ObjectID = "sJV-4S-h6p"; */
+"sJV-4S-h6p.title" = "Emerholcim";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "sLX-Fg-8DW"; */
+"sLX-Fg-8DW.title" = "Menu";
+
+/* Class = "UIButton"; normalTitle = "Traslado"; ObjectID = "syB-eS-n8r"; */
+"syB-eS-n8r.normalTitle" = "Traslado";
+
+/* Class = "UIViewController"; title = "Emergencias"; ObjectID = "t7f-61-kdI"; */
+"t7f-61-kdI.title" = "Emergencias";
+
+/* Class = "UITabBarItem"; title = "Brigadistas"; ObjectID = "tNL-H7-vF8"; */
+"tNL-H7-vF8.title" = "Brigadistas";
+
+/* Class = "UIButton"; normalTitle = "QUIMICA"; ObjectID = "u6R-wh-mSP"; */
+"u6R-wh-mSP.normalTitle" = "QUIMICA";
+
+/* Class = "UIButton"; normalTitle = "Paciente"; ObjectID = "uMe-ZT-rDs"; */
+"uMe-ZT-rDs.normalTitle" = "Paciente";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "uQF-yr-ebV"; */
+"uQF-yr-ebV.text" = "Title";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "uSg-o4-DPE"; */
+"uSg-o4-DPE.text" = "Subtitle";
+
+/* Class = "UITabBarItem"; title = "Menu"; ObjectID = "uzh-EH-ZHB"; */
+"uzh-EH-ZHB.title" = "Menu";
+
+/* Class = "UIButton"; normalTitle = "911"; ObjectID = "vQq-QP-yH0"; */
+"vQq-QP-yH0.normalTitle" = "911";
+
+/* Class = "UINavigationItem"; title = "Emerholcim"; ObjectID = "wne-cT-1IL"; */
+"wne-cT-1IL.title" = "Emerholcim";
+
+/* Class = "UIButton"; normalTitle = "Emergencia"; ObjectID = "wpF-dg-Lp2"; */
+"wpF-dg-Lp2.normalTitle" = "Emergencia";
+
+/* Class = "UITabBarItem"; title = "Interno"; ObjectID = "xkg-Mw-coG"; */
+"xkg-Mw-coG.title" = "Interno";
+
+/* Class = "UINavigationItem"; title = "Ruta GPS"; ObjectID = "xmn-KD-LBy"; */
+"xmn-KD-LBy.title" = "Ruta GPS";
+
+/* Class = "UITextField"; placeholder = "Jefe inmediato"; ObjectID = "xxx-VM-f8a"; */
+"xxx-VM-f8a.placeholder" = "Jefe inmediato";
+
+/* Class = "UITextField"; placeholder = "Nombre"; ObjectID = "yN6-gU-TSq"; */
+"yN6-gU-TSq.placeholder" = "Nombre";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "yOY-tQ-sF4"; */
+"yOY-tQ-sF4.title" = "Atras";
+
+/* Class = "UITextField"; placeholder = "Nombres"; ObjectID = "yjh-fX-eDE"; */
+"yjh-fX-eDE.placeholder" = "Nombres";
+
+/* Class = "UIButton"; normalTitle = "ACCIDENTE LEVE"; ObjectID = "ykB-z6-ZRc"; */
+"ykB-z6-ZRc.normalTitle" = "ACCIDENTE LEVE";

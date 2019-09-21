@@ -14,6 +14,9 @@ import iOSDropDown
 class RegistroController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     
+    
+    
+    
     @IBOutlet weak var nombre: UITextField!
     @IBOutlet weak var apellidos: UITextField!
     @IBOutlet weak var zona: DropDown!
@@ -88,7 +91,19 @@ class RegistroController: UIViewController,UIImagePickerControllerDelegate, UINa
         cargos.optionArray = listacargos
        
         imagePicker.delegate = self
+        
+        //frapmento para ocultar teclado parte 1
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(RegistroController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        // fin fragmento
     }
+    
+    //function para ocultar teclado parte 2
+    @objc func dismissKeyboard() {
+        //Las vistas y toda la jerarquía renuncia a responder, para esconder el teclado
+        view.endEditing(true)
+    }
+    // fin fragmento
     
     func zonainfo(zona: String) -> String {
         var zonaf: String?
